@@ -53,24 +53,27 @@
                 <div class="contact-layout">
                     <div class="contact-form-panel">
                         <h3>Send an enquiry</h3>
-                        <form>
+                        <form action="https://formspree.io/f/mkjnddon" method="POST">
                             <div class="form-grid">
                                 <div>
-                                    <input class="form-control mb-3" type="text" placeholder="Your name">
+                                    <input class="form-control mb-3" type="text" name="name" placeholder="Your name" required>
                                 </div>
                                 <div>
-                                    <input class="form-control mb-3" type="email" placeholder="Your email">
+                                    <input class="form-control mb-3" type="email" name="email" placeholder="Your email" required>
                                 </div>
                             </div>
+
                             <div class="form-grid">
                                 <div>
-                                    <input class="form-control mb-3" type="tel" placeholder="Phone number">
+                                    <input class="form-control mb-3" type="tel" name="phone" placeholder="Phone number">
                                 </div>
                                 <div>
-                                    <input class="form-control mb-3" type="text" placeholder="Subject">
+                                    <input class="form-control mb-3" type="text" name="subject" placeholder="Subject">
                                 </div>
                             </div>
-                            <textarea class="form-control mb-3" rows="5" placeholder="Your message"></textarea>
+
+                            <textarea class="form-control mb-3" rows="5" name="message" placeholder="Your message" required></textarea>
+
                             <button type="submit" class="btn btn-primary">Send Message</button>
                         </form>
                     </div>
